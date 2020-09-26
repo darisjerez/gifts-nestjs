@@ -6,7 +6,7 @@ import { GiftsModule } from './gifts/gifts.module';
 import { GuestsModule } from './guests/guests.module';
 
 @Module({
-  imports: [GiftsModule, GuestsModule, MongooseModule.forRoot('mongo "mongodb+srv://cluster0.barty.mongodb.net/weddingGifts" --username admin')],
+  imports: [GiftsModule, GuestsModule, MongooseModule.forRoot("mongodb+srv://admin:admin1234@cluster0.barty.mongodb.net/weddingGifts?retryWrites=true&w=majority")],
   controllers: [AppController],
   providers: [AppService],
 })
