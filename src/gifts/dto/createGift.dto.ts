@@ -8,4 +8,5 @@ export class CreatGiftDto {
     owner: string;
 
     taken: boolean;
+
 }

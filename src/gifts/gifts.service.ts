@@ -29,6 +29,9 @@ export class GiftsService {
     async addGiftOwner(newOwner: AddOwner, id: string): Promise<any>{
         const { owner } = newOwner;
         const gift = await this.findGiftById(id);
+        if(gift.name !== ""){
+            return { message: `${gift.name} ha sido tomado por ${gift.owner}!`, status: "Taken"};
+        }
         gift.owner = owner;
         gift.taken = true;
         await gift.save();
