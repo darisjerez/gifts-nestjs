@@ -1,4 +1,4 @@
-import { IsString } from "class-validator";
+
 
 export class CreatGiftDto {
     name: string;
@@ -8,5 +8,7 @@ export class CreatGiftDto {
     owner: string;
 
     taken: boolean;
+
+    category: string;
 
 }
