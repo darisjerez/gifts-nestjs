@@ -30,7 +30,7 @@ export class GiftsService {
         const { owner } = newOwner;
         const gift = await this.findGiftById(id);
         if(gift.name !== ""){
-            return { message: `${gift.name} ha sido tomado por ${gift.owner}!`, status: "Taken"};
+            return { message: `${gift.name} ha sido tomado por ${gift.owner}, selecciona otro.`, status: "Taken"};
         }
         gift.owner = owner;
         gift.taken = true;

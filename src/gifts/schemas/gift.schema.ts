@@ -15,6 +15,8 @@ export class Gift extends Document {
     @Prop()
     owner: string;
 
+    @Prop()
+    category: string;
 }
 
 
