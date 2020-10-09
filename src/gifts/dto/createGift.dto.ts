@@ -9,6 +9,4 @@ export class CreatGiftDto {
 
     taken: boolean;
 
-    category: string;
-
 }
